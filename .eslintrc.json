@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "react-app",
+        "react-app/jest",
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:import/typescript",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": ["./tsconfig.json"]
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "eqeqeq": [
+            "error"
+        ],
+        "no-console": "off",
+        "no-unused-vars" : "off",
+        "@typescript-eslint/no-unused-vars":"off",
+        "@typescript-eslint/no-unused-expressions":"off",
+        "testing-library/no-node-access":"warn", 
+        "no-alert":"off",
+        "react/react-in-jsx-scope":"off", 
+        "jest/valid-expect":"warn", 
+        "react/destructuring-assignment" : "off",
+        "import/prefer-default-export": "off",
+        "endOfLine":0,
+        "jsx-a11y/click-events-have-key-events": "warn",
+        "jsx-a11y/no-noninteractive-element-interactions":"warn",
+        "jsx-a11y/no-static-element-interactions":"off",
+        "no-nested-ternary":"off",
+        "no-plusplus":"off",
+        "prefer-template": "off",
+        "react-hooks/exhaustive-deps":"off",
+        "react-hooks/rules-of-hooks":"off",
+        "react/jsx-no-constructed-context-values" : "off", 
+        "react/function-component-definition": [
+            2,
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ]
+    }
+}

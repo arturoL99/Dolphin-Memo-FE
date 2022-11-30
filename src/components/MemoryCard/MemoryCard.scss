@@ -1,0 +1,28 @@
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50% 0% 50% 0%;
+}
+
+.front,.back{
+    overflow: hidden;
+    // back-ground
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+    position: absolute;
+  }
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+.back{
+     transform: perspective(600px) rotateY(-180deg); 
+}
+
+.card.rotated > .front{
+    transform: perspective(600px) rotateY(180deg);
+  }
+.card.rotated > .back{ 
+    transform: perspective(600px) rotateY(0deg);
+}

@@ -1,0 +1,18 @@
+.slider{
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+}
+
+h2{
+    font-size: 16px;
+}
+
+input[type='radio']{
+    display: none;
+}
+
+.selected{
+    border: 1px solid #554af0;
+    border-radius: 10px;
+}
