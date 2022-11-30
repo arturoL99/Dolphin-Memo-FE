@@ -1,7 +1,7 @@
 # Dolphin M3MO FE
 
-This project is a web application where you can play memory online with up to four players. 
-It's been made using React and Typescript for the Front-End, and is deployed through a pipeline to Netlify.
+This project is a mobile web application where you can play memory online with up to four players. 
+It's been made using React and Typescript for the Front-End, and is deployed to Netlify.
 
 You can visit the deployed site by going to [https://dolphin-demo.netlify.app/](https://dolphin-demo.netlify.app/).
 
